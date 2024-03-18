@@ -1,0 +1,15 @@
+1. Move the "foodKiosk" folder to xampp/htdocs/
+
+2. Open phpMyAdmin & import web_project.sql
+
+3. Go to browser & open http://localhost/foodKiosk/loginWebsite/login_form.php
+
+4. Log in with 
+user(email:user_1@gmail.com ; pswd:123)
+vendor(email:vendor_1@gmail.com ; pswd:123)
+admin(email:admin_1@gmail.com ; pswd:123)
+
+5. Click "user" button on the right top corner & click "log out".
+
+
+
