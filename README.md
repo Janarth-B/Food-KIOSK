@@ -16,17 +16,18 @@ Food vendors have the ability to access and view their dashboard which contains 
 Overall, the Kiosk system brings operational efficiency, transparency, optimization of the entire food stall business experience and improved decision-making for stakeholders involved, including administrators, food vendors, registered users and general users as well
 
 
+# Sample Interfaces
 
-
+# Customer
 ![git1](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/32ed6a99-82b9-49d1-b5b5-bf9f29ede700)
 
 
 ![git2](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/2681872a-53c7-4acb-8bfb-ee344dfddda7)
 
-
+# Dashboard
 ![git3](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/650111aa-9376-4a26-b367-3eb9d0547405)
 
-
+# Checkout
 ![git4](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/47579fc8-eb3b-4152-8f77-c9db24bd48fd)
 
 
