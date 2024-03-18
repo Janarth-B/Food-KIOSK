@@ -5,29 +5,20 @@ First, all the users must create an account to access the application. They need
 
 Food vendors have the ability to update their daily menu information, including availability and remaining foods which are visible to all users. Hence users can view daily menu availability, kiosk operation status, and remaining foods for each kiosk. In addition, food vendors can manage their kiosk's menu by creating, updating, deleting, and viewing items. Each menu item generates a QR code for on-store sales recording. Administrators have authority over menu management for specific kiosks.
 
-
 Registered users can view, filter, and choose available menu items. They can add, cancel, update and view orders. They must confirm the order list before proceeding to checkout. The order status changes to 'Ordered' after checkout and the system will display the total amount to pay. Users will earn points for each order. The points are redeemable for future purchases. Non-registered users can also place orders without earning points. After users place their order, they can make payment via various methods such as kiosk membership card payment or cash for online orders. After payment completion, the system will generate a QR code for the order.
 
 After payment is complete successfully, food vendors will receive the order details. They will continue preparing the orders and update the status to 'Prepared' in the application once the order is finish prepared. Users can view order status. Once the order status is updated to 'Prepared', they can collect their order at the kiosk by reading the QR code. The status is updated to 'Completed' after collection and the system will generate an order receipt as reference.
 
-
 Food vendors have the ability to access and view their dashboard which contains analytical reports presented in graphical representation such as graph or chart regarding the profit, sales and demand on the day of their stall business. For users, the system will generate insightful reports in graphical representation regarding their weekly/monthly spending amounts at different food stalls.
 
-Overall, the Kiosk system brings operational efficiency, transparency, optimization of the entire food stall business experience and improved decision-making for stakeholders involved, including administrators, food vendors, registered users and general users as well
-
-
 # Sample Interfaces
-
-# Customer
+# Admin
 ![git1](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/32ed6a99-82b9-49d1-b5b5-bf9f29ede700)
-
-
+# Customer
 ![git2](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/2681872a-53c7-4acb-8bfb-ee344dfddda7)
-
-# Dashboard
+# Vendor Dashboard
 ![git3](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/650111aa-9376-4a26-b367-3eb9d0547405)
-
-# Checkout
+# Final Checkout
 ![git4](https://github.com/Janarth-B/Food-KIOSK/assets/109870783/47579fc8-eb3b-4152-8f77-c9db24bd48fd)
 
-
+Overall, the Kiosk system brings operational efficiency, transparency, optimization of the entire food stall business experience and improved decision-making for stakeholders involved, including administrators, food vendors, registered users and general users as well
