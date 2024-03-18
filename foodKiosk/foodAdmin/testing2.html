@@ -1,0 +1,49 @@
+<canvas id="qrcode"></canvas>
+
+<form id="menuForm">
+    <div class="row mb-3">
+        <label for="foodName" class="col-sm-2 col-form-label col-form-label-sm fs-6">Food Name</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control form-control-sm" name="foodName" id="foodName" placeholder="Nasi Goreng" maxlength="40">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 offset-9 btn-group">
+            <button class="btn btn-primary rounded transition" type="submit" name="submit" style="--bs-btn-padding-y: .2rem; --bs-btn-padding-x: .75rem; --bs-btn-font-size: .9rem;">Add</button>
+        </div>
+    </div>
+</form>
+
+<script src="../node_modules/qrcode.min.js"></script>
+
+<script>
+    const menuForm = document.querySelector('#menuForm');
+
+    menuForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const qrValue = document.querySelector('#foodName').value;
+
+        const makeQR = (your_data) => {
+            let qrcodeContainer = document.getElementById("qrcode");
+            qrcodeContainer.innerHTML = "";
+            new QRious({
+                element: qrcodeContainer,
+                value: your_data,
+                size: 100,
+                padding: 50,
+            }); // generate QR code in canvas
+            downloadQR(); // function to download the image
+        }
+
+        function downloadQR() {
+            var link = document.createElement('a');
+            // Set the download path to "qr_"
+            link.download = 'qr_' + qrValue + '.png'; // Added Date.now() for uniqueness
+            link.href = document.getElementById('qrcode').toDataURL()
+            link.click();
+        }
+
+        makeQR(qrValue);
+    })
+</script>

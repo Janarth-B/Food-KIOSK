@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/davidshimjs-qrcodejs@0.0.2/qrcode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
+    
+    <div class="qrContainer">
+      <form id="menuForm">
+        <input type="text" class="form-control form-control-sm" name="foodName" id="foodName">
+        <button type="submit" name="submit" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+    </form>
+    </div>
+
+    <script>
+      $( "#menuForm" ).on( "submit", function( e ) {
+        e.preventDefault();
+              const url = document.querySelector("#foodName").value;
+      
+              let qrDiv = document.createElement('div');
+              let qrcode = new QRCode(qrDiv, {
+                text: url
+              });
+
+              downloadQR(url, qrDiv);
+      });
+
+      function downloadQR(qrValue, qrDiv) {
+                  var link = document.createElement('a');
+                  link.download = 'qr_' + qrValue + '.png';
+                  link.href = qrDiv.children[0].toDataURL();
+                  link.click();
+              }
+    </script>
+</body>
+</html>
